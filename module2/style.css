@@ -1,0 +1,30 @@
+.third {
+    color: darkcyan;
+    background-color: lightyellow;
+}
+
+.header {
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paragraph {
+    color: forestgreen;
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.list {
+    color: darkblue;
+    margin-left: 47%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
