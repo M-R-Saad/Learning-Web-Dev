@@ -1,0 +1,215 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.hero {
+    background: linear-gradient(0.00deg, rgba(9.197244644165039, 8.92899227142334, 8.92899227142334, 1), rgba(16, 16, 16, 0) 100%), url(assets/hero-bg.png);
+    height: 919px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content .top-text {
+    /* Savor the Flavors */
+    margin-top: 259px;
+    height: 38px;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hero-content .header-text {
+    margin-top: 16px;
+    width: 1000px;
+    height: 160px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-content .paragraph {
+    margin-top: 24px;
+    width: 1023px;
+    height: 56px;
+    opacity: 0.7;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 53px;
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 1);
+    height: 65px;
+    padding: 21px 32px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu .menu-title {
+    margin-top: 167px;
+    opacity: 0.6;
+    color: rgba(16, 16, 16, 1);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menu .menu-header {
+    margin-top: 16px;
+    width: 691px;
+    height: 128px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card-container {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.card img {
+    border-radius: 16px;
+    width: 424px;
+    height: 283px;
+}
+
+.card .card-button {
+    margin-top: 32px;
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 0.15);
+    height: 56px;
+    padding: 14px 32px;
+    border: none;
+    color: rgba(16, 16, 16, 1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card .card-header {
+    margin-top: 24px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card .card-paragraph {
+    margin-top: 24px;
+    width: 424px;
+    height: 56px;
+    opacity: 0.7;
+    color: rgba(16, 16, 16, 1);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu .menu-button {
+    margin-top: 64px;
+    margin-bottom: 184px;
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 1);
+    height: 65px;
+    padding: 21px 32px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer {
+    background-image: url(assets/social-bg.png);
+    height: 671px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-image img {
+    height: 671px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-head {
+    margin-left: 90px;
+    width: 805px;
+    height: 128px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.footer-paragraph {
+    margin-top: 24px;
+    height: 28px;
+    opacity: 0.6;
+    color: rgba(16, 16, 16, 1);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.follow-us-text {
+    width: 960px;
+    margin-top: 48px;
+    border: 2px solid rgba(16, 16, 16, 0.2);
+    padding: 30px 10px;
+    opacity: 0.7;
+    color: rgba(16, 16, 16, 1);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.social-icons {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
