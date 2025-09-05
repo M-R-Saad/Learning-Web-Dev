@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            font-size: 3em;
+        }
+
+        .div1 {
+            width: 50%;
+            background-color: darkred;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .container-2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .div2 {
+            height: 50%;
+            background-color: darkorange;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .container-3 {
+            height: 50%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .div3 {
+            width: 50%;
+            background-color: plum;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .div4 {
+            width: 50%;
+            background-color: darkslateblue;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            
+            .container {
+                flex-direction: column;
+            }
+
+            .div1, .container-2, .div2, .container-3, .div3, .div4 {
+                width: 100%;
+                height: auto;
+            }
+
+            .container-2, .container-3 {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            1
+        </div>
+        <div class="container-2">
+            <div class="div2">
+                2
+            </div>
+            <div class="container-3">
+                <div class="div3">
+                    3
+                </div>
+                <div class="div4">
+                    4
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

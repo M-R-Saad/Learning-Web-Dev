@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .left, .right {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            font-size: 4em; 
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        .left {
+            width: 30vw;
+            background-color: lightblue;
+        }
+        .right {
+            width: 70vw;
+            background-color: lightgreen;
+        }
+
+        @media screen and (max-width: 576px) {
+            
+            .container {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                box-sizing: border-box;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .left, .right {
+                width: 100%;
+                font-size: 2em;
+                font-weight: semi-bold;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .left {
+                height: 30vh;
+            }
+
+            .right {
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            Left
+        </div>
+        <div class="right">
+            Right
+        </div>
+    </div>
+</body>
+</html>

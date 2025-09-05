@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .card {
+            width: 900px;
+            display: flex;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .food-img {
+            width: 600px;
+        }
+
+        .card-content {
+            padding: 20px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: left;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+        }
+        .card-desc {
+            font-size: 1em;
+            color: #555;
+            /* text-align: justify; */
+        }
+        .btn {
+            width: 150px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+
+
+        @media screen and (max-width:576px) {
+            .container {
+                padding: 20px;
+            }
+            .card {
+                flex-direction: column;
+                width: 100%;
+            }
+            .food-img {
+                width: 100%;
+                height: auto;
+            }
+            .card-content {
+                align-items: start;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div>
+                <img src="food1.jpg" alt="" class="food-img">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">Chicken Kebab</h2>
+                <p class="card-desc">
+                    Delicious grilled chicken kebab served with soft pita bread and creamy garlic sauce. The chicken is marinated in aromatic spices, grilled to perfection, and paired with fresh vegetables for a satisfying meal. Perfect for lunch or dinner, this dish offers a delightful blend of flavors and textures.
+                </p>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src="food2.jpg" alt="" class="food-img">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">Falafel Tortilla</h2>
+                <p class="card-desc">
+                    Crispy falafel wrapped in a warm tortilla with fresh veggies and rich tahini sauce. Each bite features golden chickpea patties, crunchy lettuce, juicy tomatoes, and a drizzle of tangy sauce. This vegetarian option is both healthy and filling, making it a popular choice for all ages.
+                </p>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
