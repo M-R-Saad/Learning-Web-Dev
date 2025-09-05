@@ -1,1 +1,2 @@
 1. pokemon api - uses the PokéAPI to fetch the given pokemon's sprite.
+2. weather app - made a small weather app using the OpenWeatherMap API key.
