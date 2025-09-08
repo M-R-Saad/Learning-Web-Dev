@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.orange {
+    color: #FEA301;
+}
+
+.blue {
+    color: #01ACFD;
+}
+
+.cyan {
+    color: #05D4DF;
+}
+
+.purple {
+    color: #5D58EF;
+}
+
+.purple2 {
+    color: #8700FF;
+}
+
+.yellow {
+    color: #F0AA00;
+}
+
+.cyan-bg {
+    background-color: #3CD8E8;
+}
+
+.green-bg {
+    background-color: #95B226;
+}
+
+.purple-bg {
+    background-color: #5D58F0;
+}
+
+/* header styles */
+
+header {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav-btn {
+    padding: 10px 60px;
+    border-radius: 12px;
+    background-color: #FEA301;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+/* banner section styles */
+.banner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-title {
+    width: 90%;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.banner-text {
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.banner-btn {
+    padding: 10px 47px;
+    border-radius: 12px;
+    background-color: #111111;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+/* curriculum section styles */
+
+.education-program {
+    background: url("assets/bg.png");
+}
+
+.curriculum {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 0;
+}
+
+.curr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+
+.card-thm-blue {
+    background: linear-gradient(
+    180deg, #DEF5FF 0%, #FFFFFF 40%, #FFFFFF 100%);
+    border: 1px solid #DEF5FF;
+}
+
+.card-thm-yellow {
+    background: linear-gradient(
+    180deg, #FFF4DC 0%, #FFFFFF 40%, #FFFFFF 100%);
+    border: 1px solid #FFF4DC;
+}
+
+.card-thm-purple {
+    background: linear-gradient(
+    180deg, #EEE1FF 0%, #FFFFFF 40%, #FFFFFF 100%);
+    border: 1px solid #F2E8FF;
+}
+
+.curr-card {
+    border-radius: 18px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 52px 40px;
+}
+
+.curr-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.curr-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
+    text-align: center;
+    line-height: 2;
+}
+
+.curr-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.left-ctrl, .right-ctrl {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FEA301;
+    cursor: pointer;
+}
+
+/* stories section styles */
+
+.education-stories {
+    background: linear-gradient(0deg, rgba(254, 163, 1, 0.3) 0%, #FFFFFF 100%), url("assets/bg.png");
+}
+
+.stories {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 0;
+}
+
+
+.stories-title {
+    font-size: 2.875rem;
+    font-weight: 800;
+}
+
+.story-container {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.main-story {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.main-story-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 46px 38px 46px 38px;
+}
+
+.main-story img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.date-btn {
+    position: relative;
+    border: none;
+    border-radius: 48px;
+    padding: 15px 19px;
+    font-size: 1rem;
+    color: white;
+    display: none;
+}
+
+.story-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666666;
+    margin: 0px 16px 34px 38px;
+    line-height: 2;
+}
+
+.side-story-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.side-story {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);;
+}
+
+.side-story img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.side-story-title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 44px 54px 34px 38px;
+}
+
+.story-btn {
+    padding: 12px 62px;
+    border-radius: 12px;
+    background-color: #111111;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer styles */
+
+footer {
+    max-width: 100%;
+    background-color: #01ACFD;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    padding: 150px 190px;
+}
+
+.footer-details {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 35px;
+}
+
+.details-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.details-logo img {
+    width: 82px;
+    height: 82px;
+}
+
+.footer-title {
+    font-size: 2.625rem;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.footer-about ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.social-title {
+    font-size: 1.625rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.socials {
+    height: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* responsive styles */
