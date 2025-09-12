@@ -1,19 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
-</head>
-<body>
-    <header>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        .sora-font {
+            font-family: "Sora", sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        green1: '#179800',
+                        white1: '#EFEBE3',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="sora-font">
+    <header class="md:pt-8 md:px-32 bg-gradient-to-t from-[#EFEBE3] to-white">
+        <nav class="flex justify-between items-center border border-green1 md:border-0 px-4 py-4 md:p-0">
+            <div>
+                <img src="c2-assets/logo-header.png" alt="">
+            </div>
+            <div class="hidden md:block md:pl-32 md:ml-28">
+                <ul class="flex gap-8 text-xl">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="flex gap-6 items-center">
+                <img class="hidden md:block" src="c2-assets/search.svg" alt="">
+                <img class="hidden md:block" src="c2-assets/shopping-cart.svg" alt="">
+                <button class="hidden md:block border border-green1 rounded-lg text-xl px-8 py-2 text-green1">
+                    Login
+                </button>
+                <button class="hidden md:block bg-green1 rounded-lg text-xl px-8 py-2 text-white">
+                    Register
+                </button>
+                <img class="md:hidden" src="c2-assets/menu.svg" alt="">
+            </div>
+        </nav>
+        <section class="flex flex-col justify-center items-center text-center mt-12 md:mt-32">
+            <div class="flex flex-col justify-center items-center">
+                <h1
+                    class="text-4xl md:text-6xl font-semibold mb-8 animate__animated animate__pulse animate__slow animate__infinite">
+                    Freshness <span class="text-green1">You Can <br> Count</span> On, Prices You’ll Love!
+                </h1>
+                <p class="text-base md:text-xl font-light md:opacity-80 mb-8 w-[90%] md:w-[70%]">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                    covered every day!
+                </p>
+            </div>
+            <img class="animate__animated animate-bounce animate__infinite animate__slow"
+                src="c2-assets/hero-vegetables.png" alt="">
+        </section>
     </header>
     <main>
+        <section class="container mx-auto my-16 md:my-32 px-4">
+            <h2 class="text-4xl font-semibold text-green1 mb-16">
+                Services
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center bg-white1 rounded-2xl p-8">
+                    <img class="bg-white rounded-full p-6" src="c2-assets/service.png" alt="">
+                    <h3 class="text-2xl font-semibold mt-8 mb-4">
+                        24/7 Services
+                    </h3>
+                    <p class="text-xl font-light opacity-70 md:text-lg text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+                <div class="flex flex-col items-center bg-white1 rounded-2xl p-8">
+                    <img class="bg-white rounded-full p-6" src="c2-assets/delivery.png" alt="">
+                    <h3 class="text-2xl font-semibold mt-8 mb-4">
+                        Fast Delivery
+                    </h3>
+                    <p class="text-xl font-light opacity-70 md:text-lg text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+                <div class="flex flex-col items-center bg-white1 rounded-2xl p-8">
+                    <img class="bg-white rounded-full p-6" src="c2-assets/healthy.png" alt="">
+                    <h3 class="text-2xl font-semibold mt-8 mb-4">
+                        Healthy Products
+                    </h3>
+                    <p class="text-xl font-light opacity-70 md:text-lg text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <section class="px-3 md:px-32 py-8 md:py-24 bg-white1 ">
+            <h2 class="text-4xl font-semibold text-green1 mb-12">
+                Popular Products
+            </h2>
+            <div class="grid grid-cols-1 md:px-0 md:grid-cols-[1fr_2fr] gap-3">
+                <div class="relative bg-gradient-to-br from-[#53DB3A] to-white rounded-xl px-12 pt-12">
+                    <h2 class="text-3xl font-semibold text-white mb-2">
+                        30% Off
+                    </h2>
+                    <p class="text-sm mb-4 md:w-[80%]">
+                        Discover a world of treats, toys, and essentials handpicked items.
+                    </p>
+                    <button class="bg-white rounded-lg text-xl px-8 py-2 md:mb-12">
+                        Buy Now
+                    </button>
+                    <img class="ml-16 md:ml-0 md:absolute bottom-0 right-0" src="c2-assets/vegetable-offer.png" alt="">
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/onion.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Onion KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/potato.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Potato KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/tomato.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Tomato KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/potato.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Potato KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/tomato.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Tomato KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/onion.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Onion KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/tomato.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Tomato KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/onion.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Onion KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-2 md:p-4 bg-white rounded-xl gap-2">
+                        <img class="bg-white1 rounded-lg w-20" src="c2-assets/potato.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <img class="w-6" src="c2-assets/star-solid-full.svg" alt="">
+                                <p class="text-sm font-semibold">
+                                    4.5
+                                </p>
+                            </div>
+                            <h3 class="text-sm md:text-xl font-semibold mb-1">
+                                Potato KG
+                            </h3>
+                            <p class="text-[1rem] font-semibold">
+                                $39.99
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
