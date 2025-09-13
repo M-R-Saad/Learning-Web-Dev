@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+
+    <style>
+        .comment {
+            background-color: yellow;
+            border: 1px solid red;
+            color: red;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-family: 'Consolas', Courier, monospace;
+        }
+        #comment-button {
+            border: none;
+            padding: 16px 24px;
+            background-color: tomato;
+            font-size: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Event Handler</h1>
+    <button id="update-button">Update</button>
+
+    <p>
+        User Name: <span id="user-info"></span>
+    </p>
+    <button id="login-button">Login</button>
+
+    <div id="comment-container">
+        <p class="comment">
+            This is a comment!
+        </p>
+    </div>
+    <textarea name="comment" id="comment-input" cols="60" rows="5" placeholder="Write a comment..."></textarea>
+    <br>
+    <br>
+    <button id="comment-button">Post Comment</button>
+
+    <script src="handler.js"></script>
+</body>
+</html>

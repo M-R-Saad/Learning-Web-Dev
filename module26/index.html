@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+
+<body>
+    <h1>
+        Let's learn about DOM Events!
+    </h1>
+
+    <!-- event handler option 1 - write event handler directly in HTML -->
+    <button onclick="user_input.textContent = user_input_field.value;">Click me!</button>
+    <input type="text" placeholder="Type something..." id="user_input_field">
+
+    <h2>You typed: <span id="user_input"></span></h2>
+
+    <!-- event handler option 2 - use addEventListener in script -->
+    <button onclick="makeBodyYellow()">Make body yellow</button>
+    <button onclick="makeBodyCyan()">Make body cyan</button>
+    <script>
+        function makeBodyYellow() {
+            document.body.style.backgroundColor = "yellow";
+        }
+        function makeBodyCyan() {
+            document.body.style.backgroundColor = "cyan";
+        }
+    </script>
+
+    <!-- event handler option 3 - use addEventListener in separate JS file -->
+    <br>
+    <br>
+    <button id="make-body-red">Make body red</button>
+
+
+    <!-- event handler option 4 - use addEventListener using getElementById -->
+    <br>
+    <br>
+    <button id="make-body-purple">Make body purple</button>
+    <script>
+
+        const makeBodyPurple = document.getElementById("make-body-purple");
+
+        // This is not a good practice to use "onclick" in JavaScript as you might call the function here in which case the button wont wait for user to click the button.
+        makeBodyPurple.onclick = makePurple;// makePurple() -> wrong, makePurple -> correct
+
+        function makePurple() {
+            document.body.style.backgroundColor = "lightgreen";
+        }
+    </script>
+
+    <!-- event handler option 5 - use addEventListener using addEventListener -->
+    <br>
+    <br>
+    <button id="make-body-pink">Make body pink</button>
+    <script>
+
+        const makeBodyPink = document.getElementById("make-body-pink");
+        makeBodyPink.addEventListener("click", makePink); // can directly write function here as well
+
+        function makePink() {
+            document.body.style.backgroundColor = "pink";
+        }
+
+    </script>
+
+    <!-- Use mouseover and mouseout event handler -->
+    <h1 id="hover-header">This is Great! Hover to change color! 😃</h1>
+
+
+    
+
+
+    <script src="event.js"></script>
+</body>
+
+</html>
