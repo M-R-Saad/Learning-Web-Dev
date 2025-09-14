@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payooo Mobile Bank</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto p-6 bg-gray-100 flex flex-col justify-center gap-12">
+        <header>
+            <nav class="flex justify-center items-center mt-6">
+                <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+                    <img class="w-48 absolute" src="assets/bg.png" alt="">
+                    <img class="w-16" src="assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <form class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label font-bold text-black">Account No.</label>
+                            <input value="01234567891" id="account-no" type="number" class="input rounded-full border-none bg-gray-100 mb-2" placeholder="Your account number" required/>
+                            <label class="label font-bold text-black">PIN No.</label>
+                            <input value="1234" id="pin-no" type="text" class="input rounded-full border-none bg-gray-100" placeholder="Your PIN" required/>
+                            <button id="login-btn" class="btn bg-blue-500 text-white rounded-full mt-4">Login</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
