@@ -2,8 +2,8 @@ document.getElementById("login-btn").addEventListener("click",
     function (event) {
         event.preventDefault();
         
-        const accountNo = document.getElementById("account-no").value;
-        const pinNo = document.getElementById("pin-no").value;
+        const accountNo = getInputValueFromID("account-no");
+        const pinNo = getInputValueFromID("pin-no");
 
         if(accountNo.length === 11) {
             if(pinNo === "1234") {
