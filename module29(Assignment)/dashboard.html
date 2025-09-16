@@ -35,7 +35,7 @@
             <div class="flex items-center gap-9">
                 <div class="flex items-center gap-3 bg-[#F4F7FF] px-4 py-3 rounded-4xl">
                     <img src="assets/checkbox.png" alt="">
-                    <h1 class="text-4xl font-bold">
+                    <h1 id="task-completed" class="text-4xl font-bold">
                         23
                     </h1>
                 </div>
@@ -60,13 +60,13 @@
                         <p class="text-[#00303C] font-medium">
                             Task Assigned
                         </p>
-                        <h1 class="text-3xl text-[#00303C] font-bold">
-                            05
+                        <h1 id="task-remaining" class="text-3xl text-[#00303C] font-bold">
+                            06
                         </h1>
                     </div>
                 </div>
 
-                <div
+                <div id="blog-btn"
                     class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] px-7 py-6 rounded-xl flex items-center gap-5 col-span-2">
                     <img src="assets/board.png" alt="">
                     <h2 class="text-2xl font-medium text-white">
@@ -79,7 +79,7 @@
                         <img src="assets/calender.png" alt="">
                     </div>
 
-                    <div>
+                    <div id="current-date">
                         <h1 class="text-2xl text-[#00303C]">
                             Wed,
                             <br>
@@ -115,7 +115,7 @@
                             <br>
                             <span class="font-medium opacity-100">21 March 2025</span>
                         </p>
-                        <button class="text-white bg-blue-600 px-5 py-2 rounded-lg">
+                        <button class="complete-btn text-white bg-blue-600 px-5 py-2 rounded-lg">
                             Completed
                         </button>
                     </div>
@@ -144,7 +144,7 @@
                             <br>
                             <span class="font-medium opacity-100">21 March 2025</span>
                         </p>
-                        <button class="text-white bg-blue-600 px-5 py-2 rounded-lg">
+                        <button class="complete-btn text-white bg-blue-600 px-5 py-2 rounded-lg">
                             Completed
                         </button>
                     </div>
@@ -173,7 +173,7 @@
                             <br>
                             <span class="font-medium opacity-100">21 March 2025</span>
                         </p>
-                        <button class="text-white bg-blue-600 px-5 py-2 rounded-lg">
+                        <button class="complete-btn text-white bg-blue-600 px-5 py-2 rounded-lg">
                             Completed
                         </button>
                     </div>
@@ -202,7 +202,7 @@
                             <br>
                             <span class="font-medium opacity-100">21 March 2025</span>
                         </p>
-                        <button class="text-white bg-blue-600 px-5 py-2 rounded-lg">
+                        <button class="complete-btn text-white bg-blue-600 px-5 py-2 rounded-lg">
                             Completed
                         </button>
                     </div>
@@ -231,7 +231,7 @@
                             <br>
                             <span class="font-medium opacity-100">21 March 2025</span>
                         </p>
-                        <button class="text-white bg-blue-600 px-5 py-2 rounded-lg">
+                        <button class="complete-btn text-white bg-blue-600 px-5 py-2 rounded-lg">
                             Completed
                         </button>
                     </div>
@@ -260,7 +260,7 @@
                             <br>
                             <span class="font-medium opacity-100">21 March 2025</span>
                         </p>
-                        <button class="text-white bg-blue-600 px-5 py-2 rounded-lg">
+                        <button class="complete-btn text-white bg-blue-600 px-5 py-2 rounded-lg">
                             Completed
                         </button>
                     </div>
@@ -276,29 +276,19 @@
                         Activity Log
                     </p>
                 </div>
-                <button class="text-white bg-blue-600 px-5 py-2 rounded-lg">
+                <button id="clear-btn" class="text-white bg-blue-600 px-5 py-2 rounded-lg">
                     Clear History
                 </button>
             </div>
 
-            <div class="flex flex-col gap-6 px-6">
-                <div class="bg-[#F4F7FF] p-3 rounded-lg">
-                    <p class="opacity-70">
-                        You have Complete The Task Add Dark Mode at 12:48:15 PM
-                    </p>
-                </div>
-
-                <div class="bg-[#F4F7FF] p-3 rounded-lg">
-                    <p class="opacity-70">
-                        You have Complete The Task Add Dark Mode at 12:48:15 PM
-                    </p>
-                </div>
+            <div id="activity-log" class="flex flex-col gap-6 px-6">
+                
             </div>
         </section>
 
     </main>
 
-    <script src="js/utilities.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 
 </html>
