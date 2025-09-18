@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .inter-font {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="inter-font">
+
+    <header class="container mx-auto py-4">
+        <nav class="flex justify-between items-center py-8 border-b border-gray-300">
+            <div>
+                <img src="assets/Logo.png" alt="">
+            </div>
+
+            <div class="flex gap-4">
+                <label class="input">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                            stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </g>
+                    </svg>
+                    <input id="search-field" type="search" required placeholder="Search" />
+                </label>
+                <!-- <button class="btn border-none bg-gray-300 font-medium text-[18px]">
+                    Search
+                </button> -->
+            </div>
+
+            <button class="btn border-none bg-red-600 text-white font-medium text-[18px]">
+                Sort by View
+            </button>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <section id="category-container" class="flex justify-center gap-6">
+            <label id="all-category" class="btn border-none bg-red-600 text-white font-medium text-[18px] category-btn">
+                <input type="radio" name="category" value="All" class="hidden" />
+                All
+            </label>
+        </section>
+
+        <section id="loading" class="text-center mt-64 hidden">
+            <span class="loading loading-spinner text-red-500"></span>
+        </section>
+
+        <section id="video-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+            <!-- <div class="flex flex-col justify-center items-center gap-5 h-auto rounded-sm">
+                <img class="h-[200px]" src="assets/card.png" alt="">          
+                <div class="flex gap-3">
+                    <img class="w-10 h-10" src="assets/avatar.png" alt="">
+                    <div class="relative">
+                        <h1 class="font-bold">
+                            Building a Winning UX Strategy Using the Kano Model
+                        </h1>
+                        <div class="my-2 flex gap-2">
+                            <p class="text-sm opacity-70">
+                                Awlad Hossain
+                            </p>
+                            <img src="assets/verify.png" alt="">
+                        </div>
+                        <p class="text-sm opacity-70">
+                            91K views
+                        </p>
+                        <div class="absolute bottom-34 right-3 bg-red-500 p-1 rounded-[4px]">
+                            <p class="text-[10px] text-white">
+                                3hrs 56 min ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-span-full flex flex-col justify-center items-center gap-8 pt-32">
+                <img class="" src="assets/Icon.png" alt="">
+                <h1 class="text-3xl font-bold text-center">
+                    Oops!! Sorry, There is no <br> content here :(
+                </h1>
+            </div>
+        </section>
+
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+        <dialog id="video_details" class="modal">
+            <div id="details-container" class="modal-box">
+
+
+            </div>
+        </dialog>
+    </main>
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>
