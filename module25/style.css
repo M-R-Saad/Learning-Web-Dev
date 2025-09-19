@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+}
+
+#main-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
+    padding: 0.5rem 1rem;
+    background-color: #34495e;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #3498db;
+}
+
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+#content-section {
+    flex: 2;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+aside {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.description {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+#button-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#dynamic-content {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px dashed #bdc3c7;
+    border-radius: 4px;
+    min-height: 100px;
+}
+
+.info-box {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+#page-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Styles that will be added dynamically */
+.dynamic-style {
+    background-color: #f39c12 !important;
+    color: white !important;
+    padding: 1rem;
+    border-radius: 8px;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.new-paragraph {
+    background-color: #27ae60;
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    border-left: 4px solid #1e8449;
+}
+
+.created-list {
+    background-color: #8e44ad;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.created-list ul {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
