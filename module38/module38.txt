@@ -1,0 +1,6 @@
+Lesson in module 38:
+1. First React App
+2. Make Components
+3. Use Props to send data to Components
+4. Conditional Rendering
+5. Loop through the Props and send the data to make multiple Components.
