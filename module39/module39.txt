@@ -1,0 +1,6 @@
+Lesson in module 39:
+1. Handle events in react
+2. State Change in react
+3. useState() hook in react
+4. Fetch API data with use()
+5. useEffect() hook in react.
