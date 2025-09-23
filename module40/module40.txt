@@ -1,0 +1,6 @@
+Lesson learned in module 40:
+1. Build a simple app with REST countries API.
+2. Fetch data from API and show them using components.
+3. Conditional Rendering and Styling.
+4. Lift up the state. (To handle child component events)
+5. Deploy react app on surge/netlify.

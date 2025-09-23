@@ -1,0 +1,56 @@
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 32px auto;
+}
+
+.countries {
+    text-align: center;
+}
+
+.list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.list-items li {
+    background: #f5f7fa;
+    border-radius: 8px;
+    padding: 14px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: background 0.2s, box-shadow 0.2s;
+    font-size: 1.05rem;
+    color: #222;
+}
+
+.list-items li:hover {
+    background: #d0e7ff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.flags-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.visited-flag {
+    width: 64px;
+    height: 44px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
