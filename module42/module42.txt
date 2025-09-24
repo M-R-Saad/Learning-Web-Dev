@@ -1,0 +1,4 @@
+Lesson learned in module 42:
+1. Built a SPA.
+2. Used useEffect, useState etc.
+3. Hosted the App on netlify.
