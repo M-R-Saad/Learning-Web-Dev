@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Leica M3 Camera",
+    "description": "Classic 35mm film rangefinder camera produced by Leica from 1954 to 1966, highly sought after by collectors.",
+    "currentBidPrice": 3200,
+    "timeLeft": 2,
+    "bidsCount": 14,
+    "image": "https://i.postimg.cc/SN6P3tkV/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "1965 Gibson SG Standard Electric Guitar",
+    "description": "Iconic vintage Gibson SG with classic double-cutaway design, known for its role in rock history.",
+    "currentBidPrice": 4500,
+    "timeLeft": 2,
+    "bidsCount": 11,
+    "image": "https://i.postimg.cc/J4L6NcZX/Bid2-min.png"
+  },
+  {
+    "id": 3,
+    "title": "Original Apple Macintosh 128K (1984)",
+    "description": "Apple’s first Macintosh computer, introduced in 1984, a revolutionary piece of computing history.",
+    "currentBidPrice": 5100,
+    "timeLeft": 2,
+    "bidsCount": 9,
+    "image": "https://i.postimg.cc/hjmsxfGM/Bid3-min.png"
+  },
+  {
+    "id": 4,
+    "title": "Rolex Submariner 16610",
+    "description": "Luxury diving watch from Rolex, stainless steel with black dial and rotating bezel, renowned for durability and prestige.",
+    "currentBidPrice": 8200,
+    "timeLeft": 2,
+    "bidsCount": 18,
+    "image": "https://i.postimg.cc/4x31P8dY/Bid4-min.png"
+  },
+  {
+    "id": 5,
+    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+    "description": "Rare first edition of F. Scott Fitzgerald’s timeless classic, a centerpiece for literary collectors.",
+    "currentBidPrice": 12000,
+    "timeLeft": 2,
+    "bidsCount": 7,
+    "image": "https://i.postimg.cc/L5Rt1Dw6/Bid6-min.png"
+  },
+  {
+    "id": 6,
+    "title": "Mid-Century Modern Eames Lounge Chair",
+    "description": "Authentic Eames lounge chair with ottoman, an iconic piece of mid-century modern furniture design.",
+    "currentBidPrice": 3700,
+    "timeLeft": 2,
+    "bidsCount": 12,
+    "image": "https://i.postimg.cc/TPzqRfcb/Bid5-min.png"
+  },
+  {
+    "id": 7,
+    "title": "Banksy Original Screen Print",
+    "description": "Rare signed screen print by Banksy, showcasing the artist’s satirical and thought-provoking style.",
+    "currentBidPrice": 15000,
+    "timeLeft": 2,
+    "bidsCount": 15,
+    "image": "https://i.postimg.cc/qMJcBm21/Bid7-min.png"
+  }
+]

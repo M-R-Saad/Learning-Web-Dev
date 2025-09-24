@@ -1,0 +1,10 @@
+/* Apply Sora font to the entire application */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
+}

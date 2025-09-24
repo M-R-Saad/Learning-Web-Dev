@@ -1,0 +1,6 @@
+Lesson learned in module43:
+1. Made a SPA.
+2. Used many react core concepts (useEffect, useState).
+3. Used a new library for notification (React-toast).
+4. Completed all challenge tasks.
+5. Hosted the SPA in netlify.
