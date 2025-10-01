@@ -1,0 +1,5 @@
+Lesson learned in module41:
+1. Revisited some old topic (useState, useEffect)
+2. Made some fake data and host image online.
+3. Store data in the local storage/get data from local storage (Persistent data)
+4. Made a SPA of simple bottle shop.
