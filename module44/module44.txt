@@ -1,0 +1,5 @@
+Lesson learned in module 44:
+1. Revisited some old topics (useState, fetch, useEffect).
+2. Learned about some new sites (lucide, recharts, axios, awesome-react-components).
+3. Made a simple gym pricing plan page.
+4. Used 1 or many components from those sites.

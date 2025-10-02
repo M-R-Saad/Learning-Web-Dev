@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "age": 28,
+    "joinDate": "2024-01-15",
+    "attendance": 85,
+    "caloriesBurned": 32,
+    "workoutHours": 210,
+    "weightProgress": {
+      "start": 85,
+      "current": 78
+    },
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Khan",
+    "age": 25,
+    "joinDate": "2024-03-10",
+    "attendance": 70,
+    "caloriesBurned": 25,
+    "workoutHours": 180,
+    "weightProgress": {
+      "start": 68,
+      "current": 63
+    },
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Michael Lee",
+    "age": 32,
+    "joinDate": "2023-11-05",
+    "attendance": 60,
+    "caloriesBurned": 19,
+    "workoutHours": 150,
+    "weightProgress": {
+      "start": 92,
+      "current": 90
+    },
+    "status": "Inactive"
+  },
+  {
+    "id": 4,
+    "name": "Emma Brown",
+    "age": 30,
+    "joinDate": "2024-02-20",
+    "attendance": 95,
+    "caloriesBurned": 40,
+    "workoutHours": 240,
+    "weightProgress": {
+      "start": 75,
+      "current": 68
+    },
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "David Smith",
+    "age": 27,
+    "joinDate": "2024-05-01",
+    "attendance": 50,
+    "caloriesBurned": 15,
+    "workoutHours": 100,
+    "weightProgress": {
+      "start": 80,
+      "current": 81
+    },
+    "status": "On Hold"
+  }
+]

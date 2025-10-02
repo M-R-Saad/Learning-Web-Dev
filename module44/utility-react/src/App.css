@@ -5,3 +5,28 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/* Custom animations for pricing cards */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.pricing-card:hover {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Custom gradient for popular badge */
+.popular-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Smooth loading animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
