@@ -33,23 +33,23 @@ const router = createBrowserRouter([
         path: "laptops", Component: Laptops
       },
       {
-        path: "users", 
+        path: "users",
         loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
         Component: Users
       },
       {
         path: "users2",
         element: <Suspense fallback={<div>Loading...</div>}>
-          <Users2 usersPromise={usersPromise}/>
+          <Users2 usersPromise={usersPromise} />
         </Suspense>
       },
       {
-        path: "users2/:userId", 
+        path: "users2/:userId",
         loader: ({ params }) => fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
         Component: UserDetails
       },
       {
-        path: "posts", 
+        path: "posts",
         loader: () => fetch('https://jsonplaceholder.typicode.com/posts'),
         Component: Posts
       },
@@ -57,9 +57,17 @@ const router = createBrowserRouter([
         path: "posts/:postId",
         loader: ({ params }) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
         Component: PostDetails
+      },
+      {
+        path: "*",
+        element: <div className='text-center text-4xl font-bold mt-20'>404: Page Not Found!</div>
       }
     ]
   },
+  // {
+  //   path: "*",
+  //   element: <div className='text-center text-4xl font-bold mt-20'>404: Page Not Found!</div>
+  // }
 ]);
 
 createRoot(document.getElementById('root')).render(

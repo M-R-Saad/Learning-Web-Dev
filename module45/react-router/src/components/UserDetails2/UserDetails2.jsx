@@ -1,13 +1,8 @@
-import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import React, { use } from 'react';
 
-const UserDetails = () => {
+const UserDetails2 = ({ userPromise }) => {
 
-    const user = useLoaderData();
-    console.log(user);
-
-    const { userID } = useParams();
-    console.log(userID);
+    const user = use(userPromise);
 
     return (
         <div className='text-center border-2 border-gray-400 m-4 p-4 rounded-lg'>
@@ -22,4 +17,4 @@ const UserDetails = () => {
     );
 };
 
-export default UserDetails;
+export default UserDetails2;
