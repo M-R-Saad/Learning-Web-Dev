@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { addBookToDB } from '../../utilities/addToDB';
 
 const BookDetails = () => {
 
@@ -7,7 +8,11 @@ const BookDetails = () => {
     const { id } = useParams();
 
     const book = booksData.find(book => book.bookId === parseInt(id));
-    console.log(book);
+    // console.log(book);
+
+    const handleMarkAsRead = (id) => {
+        addBookToDB(id);
+    }
 
     return (
         <div className='grid grid-cols-[.4fr_.6fr] gap-24 mt-6 mb-12'>
@@ -40,16 +45,16 @@ const BookDetails = () => {
                 <div className='flex gap-16 items-center mb-8'>
                     <div>
                         <p className='text-[#131313B2] text-[18px] mb-2'>
-                            Number of Pages: 
+                            Number of Pages:
                         </p>
                         <p className='text-[#131313B2] text-[18px] mb-2'>
-                            Publisher: 
+                            Publisher:
                         </p>
                         <p className='text-[#131313B2] text-[18px] mb-2'>
-                            Year of Publishing: 
+                            Year of Publishing:
                         </p>
                         <p className='text-[#131313B2] text-[18px] mb-2'>
-                            Rating: 
+                            Rating:
                         </p>
                     </div>
                     <div>
@@ -61,10 +66,10 @@ const BookDetails = () => {
 
                 </div>
                 <div className='flex gap-4'>
-                    <button className='bg-white text-black border px-8 py-4 rounded-lg font-medium text-lg mr-4'>
+                    <button onClick={() => handleMarkAsRead(book.bookId)} className='bg-white text-black border px-8 py-4 rounded-lg font-medium text-lg mr-4 cursor-pointer'>
                         Mark As Read
                     </button>
-                    <button className='bg-[#59C6D2] text-white border px-8 py-4 rounded-lg font-medium text-lg'>
+                    <button className='bg-[#59C6D2] text-white border px-8 py-4 rounded-lg font-medium text-lg cursor-pointer border-none'>
                         Add to Wishlist
                     </button>
                 </div>
