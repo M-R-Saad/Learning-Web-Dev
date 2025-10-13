@@ -1,0 +1,200 @@
+[
+  {
+    "DoctorImage": "https://i.postimg.cc/L5VfbyXK/Omc-UMOIh-X-6-Eezd0le-Qm6-Ot1w9-Gpli-ANFxk-FNpz-Ks-O-8-BDlkt-Nu-MVgavd-GXRf-JRk8c-Bk-UFCUAdjebg-XP6-Kof-A.webp",
+    "Name": "Dr. Gregory House",
+    "Education": "MD, Nephrology & Infectious Disease",
+    "Specialty": "Diagnostic Medicine",
+    "Experience": 18,
+    "RegistrationNumber": "BD 20104567",
+    "WorkingAt": "Princeton-Plainsboro Teaching Hospital",
+    "Availability": ["Monday", "Wednesday", "Friday"],
+    "ConsultationFee": 350
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/bwSrGChj/Dr-Stephen-Strange.webp",
+    "Name": "Dr. Stephen Strange",
+    "Education": "MD, PhD - Neurosurgery",
+    "Specialty": "Neurosurgeon",
+    "Experience": 12,
+    "RegistrationNumber": "BD 19870542",
+    "WorkingAt": "Metro General Hospital, New York",
+    "Availability": ["Tuesday", "Thursday", "Saturday"],
+    "ConsultationFee": 500
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/fL8DqmNC/Dr-Meredith-Grey.jpg",
+    "Name": "Dr. Meredith Grey",
+    "Education": "MD - General Surgery",
+    "Specialty": "General Surgeon",
+    "Experience": 14,
+    "RegistrationNumber": "BD 20092387",
+    "WorkingAt": "Grey Sloan Memorial Hospital",
+    "Availability": ["Sunday", "Tuesday", "Thursday"],
+    "ConsultationFee": 300
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/5281dZJ1/Dr-John-Watson.webp",
+    "Name": "Dr. John Watson",
+    "Education": "MBBS, MRCGP",
+    "Specialty": "Family Medicine",
+    "Experience": 10,
+    "RegistrationNumber": "BD 12457899",
+    "WorkingAt": "221B Baker Street Clinic, London",
+    "Availability": ["Monday", "Wednesday", "Friday"],
+    "ConsultationFee": 220
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/xTzVMWXr/Dr-Beverly-Crusher.jpg",
+    "Name": "Dr. Beverly Crusher",
+    "Education": "MD, Starfleet Medical Academy",
+    "Specialty": "Space Medicine",
+    "Experience": 20,
+    "RegistrationNumber": "BD 22104588",
+    "WorkingAt": "USS Enterprise Medical Bay",
+    "Availability": ["Tuesday", "Thursday", "Sunday"],
+    "ConsultationFee": 400
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/6TsSMpyj/Dr-John-Dorian.jpg",
+    "Name": "Dr. John Dorian",
+    "Education": "MD - Internal Medicine",
+    "Specialty": "Internal Medicine",
+    "Experience": 8,
+    "RegistrationNumber": "BD 12458976",
+    "WorkingAt": "Sacred Heart Hospital",
+    "Availability": ["Monday", "Tuesday", "Friday"],
+    "ConsultationFee": 250
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/s2NRpy9q/Dr-Perry-Cox.webp",
+    "Name": "Dr. Perry Cox",
+    "Education": "MD - Internal Medicine",
+    "Specialty": "Intensive Care",
+    "Experience": 16,
+    "RegistrationNumber": "BD 12457911",
+    "WorkingAt": "Sacred Heart Hospital",
+    "Availability": ["Sunday", "Wednesday", "Friday"],
+    "ConsultationFee": 310
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/J45Vpj5Q/Dr-Shoko-Ieiri.jpg",
+    "Name": "Dr. Shoko Ieiri",
+    "Education": "MD - Surgery",
+    "Specialty": "Trauma Surgery",
+    "Experience": 9,
+    "RegistrationNumber": "BD 21478596",
+    "WorkingAt": "Tokyo Medical University Hospital",
+    "Availability": ["Monday", "Thursday", "Saturday"],
+    "ConsultationFee": 280
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/15J7gBKk/Dr-Spencer-Reid.webp",
+    "Name": "Dr. Spencer Reid",
+    "Education": "MD, PhD in Neuroscience",
+    "Specialty": "Neuropsychology",
+    "Experience": 7,
+    "RegistrationNumber": "BD 12459981",
+    "WorkingAt": "Quantico Behavioral Institute",
+    "Availability": ["Tuesday", "Thursday", "Sunday"],
+    "ConsultationFee": 260
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/bJgk6Cdh/Dr-Bulma-Briefs.jpg",
+    "Name": "Dr. Bulma Briefs",
+    "Education": "PhD - Biomedical Engineering",
+    "Specialty": "Medical Technology & Robotics",
+    "Experience": 11,
+    "RegistrationNumber": "BD 23258900",
+    "WorkingAt": "Capsule Corp Research Hospital",
+    "Availability": ["Wednesday", "Friday", "Saturday"],
+    "ConsultationFee": 370
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/JnpH3sdM/Dr-Rintarou-Okabe.webp",
+    "Name": "Dr. Rintarou Okabe",
+    "Education": "PhD - Biomedical Physics",
+    "Specialty": "Experimental Medicine",
+    "Experience": 6,
+    "RegistrationNumber": "BD 14587912",
+    "WorkingAt": "Future Gadget Lab Medical Division",
+    "Availability": ["Monday", "Thursday", "Sunday"],
+    "ConsultationFee": 240
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/1t3fz9RH/Dr-Cristina-Yang.webp",
+    "Name": "Dr. Cristina Yang",
+    "Education": "MD - Cardiothoracic Surgery",
+    "Specialty": "Cardiothoracic Surgeon",
+    "Experience": 15,
+    "RegistrationNumber": "BD 20458766",
+    "WorkingAt": "Grey Sloan Memorial Hospital",
+    "Availability": ["Tuesday", "Thursday", "Saturday"],
+    "ConsultationFee": 380
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/CKFKvF8n/Dr-Julius-Hibbert.webp",
+    "Name": "Dr. Julius Hibbert",
+    "Education": "MD - General Medicine",
+    "Specialty": "Family Physician",
+    "Experience": 13,
+    "RegistrationNumber": "BD 12457800",
+    "WorkingAt": "Springfield General Hospital",
+    "Availability": ["Sunday", "Wednesday", "Friday"],
+    "ConsultationFee": 210
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/52JvVWzD/Dr-Leonard-Mc-Coy.jpg",
+    "Name": "Dr. Leonard McCoy",
+    "Education": "MD - Space Medicine",
+    "Specialty": "Astrobiology & Surgery",
+    "Experience": 17,
+    "RegistrationNumber": "BD 17789954",
+    "WorkingAt": "USS Enterprise",
+    "Availability": ["Monday", "Thursday", "Saturday"],
+    "ConsultationFee": 390
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/2SCqtFp7/Dr-Light-Yagami.webp",
+    "Name": "Dr. Light Yagami",
+    "Education": "MD - Forensic Medicine",
+    "Specialty": "Forensic Pathology",
+    "Experience": 8,
+    "RegistrationNumber": "BD 12454789",
+    "WorkingAt": "Tokyo Metropolitan Medical Center",
+    "Availability": ["Tuesday", "Wednesday", "Friday"],
+    "ConsultationFee": 270
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/dV7MwgK0/Dr-Haruno-Sakura.jpg",
+    "Name": "Dr. Haruno Sakura",
+    "Education": "MD - Medical Ninjutsu & Surgery",
+    "Specialty": "Trauma & Emergency Medicine",
+    "Experience": 10,
+    "RegistrationNumber": "BD 24589917",
+    "WorkingAt": "Konoha Medical Unit",
+    "Availability": ["Monday", "Thursday", "Sunday"],
+    "ConsultationFee": 290
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/tCZDTbYx/Dr-Who.jpg",
+    "Name": "Dr. Who",
+    "Education": "PhD - Temporal Medicine",
+    "Specialty": "Regenerative Biology",
+    "Experience": 1000,
+    "RegistrationNumber": "BD 00000001",
+    "WorkingAt": "TARDIS Health Center",
+    "Availability": ["All Days"],
+    "ConsultationFee": 999
+  },
+  {
+    "DoctorImage": "https://i.postimg.cc/L5qknk6K/Dr-Han-Jaejoon.jpg",
+    "Name": "Dr. Han Jaejoon",
+    "Education": "MD - Plastic & Reconstructive Surgery",
+    "Specialty": "Aesthetic Surgery",
+    "Experience": 9,
+    "RegistrationNumber": "BD 17451258",
+    "WorkingAt": "Seoul Aesthetic Medical Center",
+    "Availability": ["Tuesday", "Friday", "Saturday"],
+    "ConsultationFee": 330
+  }
+]
