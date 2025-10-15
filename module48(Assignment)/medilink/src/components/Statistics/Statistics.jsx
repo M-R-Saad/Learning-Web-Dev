@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 
 const Statistics = () => {
     return (
@@ -10,11 +11,11 @@ const Statistics = () => {
                 Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. 
             </p>
 
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-6 w-full'>
                 <div className='bg-white px-16 py-10 rounded-2xl'>
                     <img className='w-16' src="success-doctor.png" alt="Success Doctor" />
                     <h2 className='text-5xl font-extrabold my-4'>
-                        199+
+                        <CountUp start={0} end={199} duration={7} suffix="+" />
                     </h2>
                     <p className='font-semibold text-[#0F0F0F99]'>
                         Total Doctors
@@ -23,7 +24,7 @@ const Statistics = () => {
                 <div className='bg-white px-16 py-10 rounded-2xl'>
                     <img className='w-16' src="success-review.png" alt="Success Review" />
                     <h2 className='text-5xl font-extrabold my-4'>
-                        467+
+                        <CountUp start={0} end={467} duration={7} suffix="+" />
                     </h2>
                     <p className='font-semibold text-[#0F0F0F99]'>
                         Total Reviews
@@ -32,7 +33,7 @@ const Statistics = () => {
                 <div className='bg-white px-16 py-10 rounded-2xl'>
                     <img className='w-16' src="success-patients.png" alt="Success Patient" />
                     <h2 className='text-5xl font-extrabold my-4'>
-                        1900+
+                        <CountUp start={0} end={1900} duration={7} suffix="+" />
                     </h2>
                     <p className='font-semibold text-[#0F0F0F99]'>
                         Total Patients
@@ -41,7 +42,7 @@ const Statistics = () => {
                 <div className='bg-white px-16 py-10 rounded-2xl'>
                     <img className='w-16' src="success-staffs.png" alt="Success Staff" />
                     <h2 className='text-5xl font-extrabold my-4'>
-                        300+
+                        <CountUp start={0} end={300} duration={7} suffix="+" />
                     </h2>
                     <p className='font-semibold text-[#0F0F0F99]'>
                         Total Staffs

@@ -1,10 +1,18 @@
 import React from 'react';
 import Navbar from './../../components/Header/Navbar';
 import Footer from './../../components/Footer/Footer';
+import { Helmet } from "react-helmet";
+import { useLocation } from 'react-router';
 
 const ErrorPage = () => {
+
+    let location = useLocation()
+
     return (
         <div>
+            <Helmet>
+                <title>MediLink | {location.pathname.split('/').pop().toUpperCase()}</title>
+            </Helmet>
             <Navbar />
             <div className='flex flex-col justify-center items-center h-[80vh]'>
                 <h1 className='text-9xl font-bold text-red-600'>404</h1>

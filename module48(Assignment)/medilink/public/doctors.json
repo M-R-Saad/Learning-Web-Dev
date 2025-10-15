@@ -183,7 +183,7 @@
     "Experience": 1000,
     "RegistrationNumber": "BD 00000001",
     "WorkingAt": "TARDIS Health Center",
-    "Availability": ["All Days"],
+    "Availability": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     "ConsultationFee": 999
   },
   {
