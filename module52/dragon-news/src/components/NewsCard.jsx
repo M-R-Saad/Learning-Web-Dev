@@ -28,9 +28,27 @@ const NewsCard = ({ news }) => {
                     {news.title}
                 </h2>
                 <img className='w-full h-auto object-cover rounded-md' src={news.image_url} alt="" />
-                <p className='text-accent'>
+                {/* <p className='text-accent'>
                     {news.details}
-                </p>
+                </p> */}
+                <div>
+                    {
+                        news.details.length > 400 ? (
+                            <>
+                                <p className='text-accent'>
+                                    {news.details.slice(0, 400) + '...'}
+                                </p>
+                                <button className='text-[#FF8C47] font-semibold mt-2 cursor-pointer'>
+                                    Read More
+                                </button>
+                            </>
+                        ) : (
+                            <p className='text-accent'>
+                                {news.details}
+                            </p>
+                        )
+                    }
+                </div>
             </div>
             <div className='flex justify-between mx-5 py-4 border-t border-base-300'>
                 <div className='flex items-center gap-2'>
