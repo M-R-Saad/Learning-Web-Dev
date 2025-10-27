@@ -1,12 +1,23 @@
-import React from 'react';
-import { Outlet } from 'react-router';
+import React, { useEffect } from 'react';
+import { Outlet, useParams, useLoaderData } from 'react-router';
 import Header from './../components/Header';
 import LatestNews from './../components/LatestNews';
 import Navbar from './../components/Navbar';
-import LeftAside from './../components/homelayout/LeftAside';
 import RightAside from './../components/homelayout/RightAside';
+import NewsDetailsCard from './../components/NewsDetailsCard';
 
-const HomeLayout = () => {
+const NewsDetails = () => {
+
+    const { id } = useParams();
+    const newsData = useLoaderData();
+
+    const [news, setNews] = React.useState({});
+
+    useEffect(() => {
+        const newsDetails = newsData.find(item => item.id === id);
+        setNews(newsDetails);
+    }, [id, newsData])
+
     return (
         <div className='max-w-[1540px] mx-auto'>
             <header>
@@ -17,11 +28,9 @@ const HomeLayout = () => {
                 <Navbar></Navbar>
             </div>
             <main className='grid grid-cols-4 gap-6'>
-                <aside className='sticky top-26 h-fit'>
-                    <LeftAside></LeftAside>
-                </aside>
-                <section className='main col-span-2'>
-                    <Outlet></Outlet>
+                <section className='main col-span-3'>
+                    <h2 className='text-xl font-semibold mb-5'>Dragon News</h2>
+                    <NewsDetailsCard news={news}></NewsDetailsCard>
                 </section>
                 <aside className='sticky top-26 h-fit'>
                     <RightAside></RightAside>
@@ -31,4 +40,4 @@ const HomeLayout = () => {
     );
 };
 
-export default HomeLayout;
+export default NewsDetails;

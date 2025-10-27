@@ -2,6 +2,7 @@ import React from 'react';
 import { HiOutlineBookmark, HiOutlineShare } from "react-icons/hi";
 import { FaStar } from "react-icons/fa6";
 import { MdRemoveRedEye } from "react-icons/md";
+import { Link } from 'react-router';
 
 const NewsCard = ({ news }) => {
     return (
@@ -33,14 +34,14 @@ const NewsCard = ({ news }) => {
                 </p> */}
                 <div>
                     {
-                        news.details.length > 400 ? (
+                        news.details.length > 250 ? (
                             <>
                                 <p className='text-accent'>
-                                    {news.details.slice(0, 400) + '...'}
+                                    {news.details.slice(0, 250) + '...'}
                                 </p>
-                                <button className='text-[#FF8C47] font-semibold mt-2 cursor-pointer'>
+                                <Link to={`/news-details/${news.id}`} className='text-[#FF8C47] font-semibold mt-2 cursor-pointer'>
                                     Read More
-                                </button>
+                                </Link>
                             </>
                         ) : (
                             <p className='text-accent'>

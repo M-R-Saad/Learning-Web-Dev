@@ -9,8 +9,8 @@ const Categories = () => {
 
     return (
         <div>
-            <h3 className='text-xl font-semibold mb-5'>All Category</h3>
-            <div className='flex flex-col text-xl font-medium text-accent-content'>
+            <h3 className='text-xl font-semibold mb-5'>All Category ({categories.length})</h3>
+            <div className='flex flex-col text-lg font-semibold text-accent-content'>
                 {
                     categories.map(category => <NavLink key={category.id}
                                                     to={`/category/${category.id}`}

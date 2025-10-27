@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const LatestNews = () => {
     return (
-        <div className='bg-base-200 p-4 flex gap-5 mb-8'>
+        <div className='bg-base-200 p-4 flex gap-5 mb-6'>
             <p className='btn btn-secondary rounded-none btn-lg'>
                 Latest
             </p>
