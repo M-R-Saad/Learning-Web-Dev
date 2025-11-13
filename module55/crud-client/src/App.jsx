@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>      
-      <h1 className='text-6xl text-center my-20 font-semibold'>Simple CRUD Operations</h1>
+      <h1 className='text-6xl text-center mb-20 font-semibold'>Simple CRUD Operations</h1>
       <Users userPromise={userPromise} />
     </>
   )

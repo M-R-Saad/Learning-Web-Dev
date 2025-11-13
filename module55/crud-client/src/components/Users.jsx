@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Users = ({ userPromise }) => {
 
@@ -74,7 +75,16 @@ const Users = ({ userPromise }) => {
                         users.map(user => 
                             <p key={user._id} className='text-center py-2 font-semibold'>
                                 {user.name} - {user.email}
-                                <button onClick={() => handleUserDelete(user._id)} className='btn btn-error btn-xs text-white ml-4'>X</button>
+                                <Link to={`/users/${user._id}`}>
+                                    <button className='btn btn-success btn-xs text-white font-extrabold ml-4'>i</button>
+                                </Link>
+                                <Link to={`/update/${user._id}`}>
+                                    <button className='btn btn-warning btn-xs text-white font-extrabold ml-4'>e</button>
+                                </Link>
+                                <button onClick={() => handleUserDelete(user._id)} className='btn btn-error btn-xs text-white font-extrabold ml-4'>
+                                    x
+                                </button>
+                                
                             </p>
                         )
                     }
